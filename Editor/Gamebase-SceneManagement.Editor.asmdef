@@ -1,6 +1,7 @@
 {
-    "name": "[PackageName].Editor",
+    "name": "Gamebase-SceneManagement.Editor",
     "references": [
+        "GUID:48f37a7b1d57c4be8be5bc225fbbf17d"
     ],
     "includePlatforms": [
         "Editor"
