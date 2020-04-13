@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hiyorin/Gamebase-Scene.git"
+    "url": "https://github.com/hiyorin/Gamebase-SceneManagement.git"
   },
   "src": "Packages/com.gamebase.scene",
   "author": "hiyorin <ponkotsu.hiyorin@gmail.com> (https://github.com/hiyorin)",

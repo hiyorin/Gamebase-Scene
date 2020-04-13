@@ -1,4 +1,4 @@
-# Gamebase-Scene
+# Gamebase-SceneManagement
 
 <br><br><br><br>
 ## Table Of Contents
@@ -14,8 +14,8 @@
 
 <br><br><br><br>
 ## Description
-*Gamebase-Scene* is manage scene and make  scene lifecycle.
-*Gamebase-Scene* is an extension for [Gamebase-Core](https://github.com/hiyorin/Gamebase-Core) and won't work without it.
+*Gamebase-SceneManagement* is manage scene and make  scene lifecycle.
+*Gamebase-SceneManagement* is an extension for [Gamebase-Core](https://github.com/hiyorin/Gamebase-Core) and won't work without it.
 
 
 <br><br><br><br>
@@ -39,7 +39,7 @@ Find `Packages/manifest.json` in your project and edit it to look like this:
   "dependencies": {
     "com.coffee.git-dependency-resolver": "1.1.3",
     "com.coffee.upm-git-extension": "1.1.0-preview.12",
-    "com.gamebase.scene": "https://github.com/hiyorin/Gamebase-Scene.git",
+    "com.gamebase.scene": "https://github.com/hiyorin/Gamebase-SceneManagement.git",
     ...
   }
 }
