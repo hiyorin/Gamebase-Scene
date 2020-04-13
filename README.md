@@ -1,4 +1,4 @@
-# Gamebase-SceneManagement
+# Gamebase-Scene
 
 <br><br><br><br>
 ## Table Of Contents
@@ -9,12 +9,13 @@
   - [Add Scene](#add-scene)
   - [Controller](#controller)
   - [Lifecycle](#lifecycle)
+- [NodeCanvas Integration](#nodecanvas-integration)
 - [License](#license)
 
 <br><br><br><br>
 ## Description
-*Gamebase-SceneManagement* is manage scene and make  scene lifecycle.
-*Gamebase-SceneManagement* is an extension for [Gamebase-Core](https://github.com/hiyorin/Gamebase-Core) and won't work without it.
+*Gamebase-Scene* is manage scene and make  scene lifecycle.
+*Gamebase-Scene* is an extension for [Gamebase-Core](https://github.com/hiyorin/Gamebase-Core) and won't work without it.
 
 
 <br><br><br><br>
@@ -38,7 +39,7 @@ Find `Packages/manifest.json` in your project and edit it to look like this:
   "dependencies": {
     "com.coffee.git-dependency-resolver": "1.1.3",
     "com.coffee.upm-git-extension": "1.1.0-preview.12",
-    "com.gamebase.scene": "https://github.com/hiyorin/Gamebase-SceneManagement.git",
+    "com.gamebase.scene": "https://github.com/hiyorin/Gamebase-Scene.git",
     ...
   }
 }
@@ -74,15 +75,15 @@ This scene is child scene.
   {
     async UniTask ISceneLifecycle.OnInitialize(object transData)
     {
-        // Called only once when the scene is loaded.
-        // Received trans data.
-        // Load dynamic resources here.
+      // Called only once when the scene is loaded.
+      // Received trans data.
+      // Load dynamic resources here.
     }
   
     void ISceneLifecycle.OnDispose()
     {
-       // Called only onece when the scene is unloaded.
-       // Unload dynamic resources here.
+      // Called only onece when the scene is unloaded.
+      // Unload dynamic resources here.
     }
   }
   ```
@@ -99,6 +100,10 @@ This scene is child scene.
   }
   ```
 
+## NodeCanvas Integration
+[NodeCanvas](https://assetstore.unity.com/packages/tools/visual-scripting/nodecanvas-14914) is the Complete Visual Behaviour Authoring solution for Unity. For more details see the [NodeCanvas docs](https://nodecanvas.paradoxnotion.com/documentation/).  
+
+Gamebase integration with NodeCanvas is disabled by default. To enable, you must add the define 'GAMEBASE_ADD_NODECANVAS' to your project,
 <br><br><br><br>
 ## License
 This library is under the MIT License.  
