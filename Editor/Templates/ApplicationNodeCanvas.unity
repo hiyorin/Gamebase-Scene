@@ -196,6 +196,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8361863}
+  - component: {fileID: 8361866}
+  - component: {fileID: 8361865}
+  - component: {fileID: 8361864}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -217,6 +220,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8361864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059e7545af2fe4a88a75a4937badef3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8361865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &8361866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: 
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 0
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 8361865}
 --- !u!1 &298710058
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +386,7 @@ GameObject:
   - component: {fileID: 751376443}
   - component: {fileID: 751376442}
   - component: {fileID: 751376444}
+  - component: {fileID: 751376445}
   m_Layer: 0
   m_Name: SceneContext
   m_TagString: Untagged
@@ -349,6 +409,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 751376444}
+  - {fileID: 751376445}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -399,6 +460,18 @@ MonoBehaviour:
   transSettings:
     fadeDuration: 0.2
   transition: {fileID: 2058520044}
+--- !u!114 &751376445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751376441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76e1c1fc318b4c7e96e0404c0898e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &774928323
 GameObject:
   m_ObjectHideFlags: 0

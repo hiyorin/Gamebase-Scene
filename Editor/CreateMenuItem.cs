@@ -12,22 +12,40 @@ namespace Gamebase.Scene.Editor
         [MenuItem("Assets/Create/Gamebase-Scene/Application", false, 0)]
         public static void CreateApplication()
         {
-            if (!Copy("Application"))
+            if (!Copy("Application", "Application"))
                 throw new Exception();
         }
         
         [MenuItem("Assets/Create/Gamebase-Scene/Scene", false, 1)]
         public static void CreateScene()
         {
-            if (!Copy("Scene"))
+            if (!Copy("Scene", "Scene"))
                 throw new Exception();
         }
 
-        private static bool Copy(string fileName)
+        #if GAMEBASE_ADD_NODECANVAS
+        
+        [MenuItem("Assets/Create/Gamebase-Scene/Application (NodeCanvas)", false, 10)]
+        public static void CreateApplicationNodeCanvas()
+        {
+            if (!Copy("ApplicationNodeCanvas", "Application"))
+                throw new Exception();
+        }
+
+        [MenuItem("Assets/Create/Gamebase-Scene/Scene (NodeCanvas)", false, 11)]
+        public static void CreateSceneNodeCanvas()
+        {
+            if (!Copy("SceneNodeCanvas", "Scene"))
+                throw new Exception();
+        }
+        
+        #endif
+        
+        private static bool Copy(string fileName, string newFileName)
         {
             var selectObject = Selection.objects.FirstOrDefault();
             var newPath = selectObject != null ? AssetDatabase.GetAssetPath(selectObject) : Application.dataPath;
-            if (!AssetDatabase.CopyAsset($"{TemplatePath}/{fileName}.unity", $"{newPath}/{fileName}.unity"))
+            if (!AssetDatabase.CopyAsset($"{TemplatePath}/{fileName}.unity", $"{newPath}/{newFileName}.unity"))
                 return false;
             
             AssetDatabase.SaveAssets();
